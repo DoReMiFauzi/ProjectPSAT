@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/trainers.png" type="">
+    <title>Revel</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="primary-navigation">
+        <div class="logo">
+            <img src="img/trainers.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Information</a></li>
+            <li><a href="#product">Pricing</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="profile-container">
+            <button class="profile-btn" onclick="toggleDropdown()">
+              <img src="img/profile.png" alt="User" />
+              <span class="profile-name"><h3 id="nickName"></h3></span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        
+            <div class="dropdown-menu" id="profileDropdown">
+              <a href="profile.html" class="dropdown-item"> <img src="img/fi-br-user.svg" alt=""> Profile</a>
+              <a href="https://wa.me/+6281936339561?text=hai%20saya%20memiliki%20masalah" class="dropdown-item"> <img src="img/settings.png" alt=""> Help</a>
+              <a href="login.html" class="dropdown-item"> <img src="img/fi-br-exit.svg" alt="">  Log out</a>
+            </div>
+          </div>
+    </nav>
+    <!-- Header -->
+    <header id="home">
+        <img src="img/bg-white.jpg" alt="">
+        <div class="headline-header">
+            <div class="text-header"><h2>Your steps,</h2>
+            <p>Show who you are through every step. Contemporary design,
+                comfortable to wear, ready to complete your active and stylish lifestyle...</p></div>
+                <img src="img/gambar-sepatu-rmvbg.png" alt="" class="sepatu-putih">
+            </div>
+            <div class="search-toolbar">
+                <div class="wrap-toolbar">
+                    <input type="text" name="" placeholder="Search..." id="searchTool" required autocomplete="off">
+            <button id="btnAlert"><img src="img/fi-br-search.svg" alt=""></button>
+        </div>
+    </div>
+    </header>
+    
+    <main>
+        <!-- Notif Search -->
+    
+        <div class="wrap-notif-search" id="notifSearch">
+            <div class="notif-search">
+                <button  id="btnCloseSearch"><img src="img/fi-br-circle-xmark.svg" alt=""></button>
+                <img src="img/fi-br-ban.svg" alt="" class="logo-ban">
+                <h3>Sorry Server Are Maintanance!!</h3>
+            </div>
+        </div>
+        <!-- Article Description Feautere  -->
+        <article class="description-features" id="features">
+            <div class="feature1">
+                <h2 class="title1">About This Shoes</h2>
+                    <p>
+                    These casual shoes are designedfor all-day comfort and effortless style. Made from high-quality 
+                    materials, they offer a lightweight feel and a versatile look that fits various occasions — from daily wear to relaxed weekend
+                    outings. The simple yet modern design makes them easy to pair with jeans, chinos, or shorts.
+                        <br><br>
+                    Discover the perfect balance between comfort and style with our premium casual shoes. Crafted with attention to detail, these shoes are made from high-quality materials such as 
+                    durable canvas, soft suede, or synthetic leather to ensure long-lasting wear and a comfortable fit.
+                        <br><br>
+                    Designed for everyday versatility, these casual shoes are ideal for a variety of settings — from commuting to work, strolling through the city, to weekend meetups with friends. The minimalist silhouette combined with subtle stitching and
+                    neutral tones makes them easy to pair with your favorite jeans, chinos, or even smart-casual outfits.
+                    <br><br>
+                    Inside, a cushioned insole and breathable lining provide all-day support and ventilation, while the flexible outsole offers excellent grip and movement. Whether you're dressing
+                     up or going for a relaxed look, these shoes will elevate your outfit effortlessly.
+                        </p>
+            </div>
+            <div class="wrap-feature-2-3">
+            <div class="feature2">
+                <h3 class="title2">What is Revel?</h3>
+                    <p>
+                    Revel is a footwear store that offers a curated collection to support an active and modern lifestyle. We provide a wide range of high-quality shoes — from casual and formal to sportswear — all designed with 
+                    style and maximum comfort in mind. At Revel, every step you take is a blend of style and confidence.
+                    </p>
+            </div>
+            <div class="feature3">
+                <h3 class="title2">Since When?</h3>
+                <p>
+                    Revel was founded in 2020 with a vision to become a local footwear brand that delivers
+                    high quality and modern design. Since the beginning, Revel has been committed to providing comfort and style
+                    in every step, making shoes an essential part of an active and confident lifestyle.
+                </p>
+            </div>
+        </div>
+        </article>
+        <!-- Article Product -->
+            <div class="title" id="product">
+            <div class="warp-title">
+                <h2>Our Resent Products</h2>
+                <div class="swipe-btn">
+                    <button class="pre-btn"><img src="img/fi-br-angle-small-left.svg" alt=""></button>
+                    <button class="nxt-btn"><img src="img/fi-br-angle-small-right.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+            <!-- Products -->
+            <article class="products">
+            <div class="wrap-products">
+            <div class="product1" id="product1">
+                <div class="img-product">
+                <img src="img/hitam-kuning-removebg-preview.png" alt="">
+                </div>
+                <div class="title-product">
+                    <h3>Sneakers</h3>
+                    <h4>299.0 K</h4>
+                </div>
+                <div class="description-product">
+                    <p>
+            These casual shoes are designed to provide optimal comfort while still looking stylish.
+            With a breathable upper they’re perfect for everyday wear—whether you're heading to work.
+                </p>
+                </div>
+                <button id="buyBtn1"><h5>BUY NOW</h5></button>
+            </div>
+            <div class="product2">
+                <div class="img-product">
+                    <img src="img/merah-removebg-preview.png" alt="">
+                    </div>
+                    <div class="title-product">
+                        <h3>Sneakers</h3>
+                        <h4>299.0 K</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>
+            These casual shoes are designed to provide optimal comfort while still looking stylish.
+            With a breathable upper they’re perfect for everyday wear—whether you're heading to work.
+                    </p>
+                    </div>
+                    <button id="buyBtn2" id="buyBtn"> <h5>BUY NOW</h5></button>
+            </div>
+            <div class="product3">
+                <div class="img-product">
+                    <img src="img/kuning-removebg-preview.png" alt="">
+                    </div>
+                    <div class="title-product">
+                        <h3>Sneakers</h3>
+                        <h4>299.0 K</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>
+            These casual shoes are designed to provide optimal comfort while still looking stylish.
+            With a breathable upper they’re perfect for everyday wear—whether you're heading to work.
+                    </p>
+                    </div>
+                    <button id="buyBtn3"> <h5>BUY NOW</h5></button>
+            </div>
+            <div class="product4">
+                <div class="img-product">
+                    <img src="img/hitam-removebg-preview.png" alt="">
+                    </div>
+                    <div class="title-product">
+                        <h3>Sneakers</h3>
+                        <h4>299.0 K</h4>
+                    </div>
+                    <div class="description-product">
+                    <p>
+            These casual shoes are designed to provide optimal comfort while still looking stylish.
+            With a breathable upper they’re perfect for everyday wear—whether you're heading to work.
+                    </p>
+                    </div>
+                    <button id="buyBtn4"> <h5>BUY NOW</h5></button>
+            </div>
+            <div class="product5">
+                <div class="img-product">
+                    <img src="img/full-kuning-removebg-preview.png" alt="">
+                    </div>
+                    <div class="title-product">
+                        <h3>Sneakers</h3>
+                        <h4>299.0 K</h4>
+                    </div>
+                    <div class="description-product">
+                        <p>
+            These casual shoes are designed to provide optimal comfort while still looking stylish.
+            With a breathable upper they’re perfect for everyday wear—whether you're heading to work.
+                    </p>
+                    </div>
+                    <button  id="buyBtn5"> <h5>BUY NOW</h5></button>
+            </div>
+        </div>
+        </article>
+        <!-- Testimonial -->
+        <article class="testimonial" id="testimonial">
+            <div class="title-testimonial">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="wrap-testimonial">
+                <div class="user1">
+                    <img src="img/fi-br-user.svg" alt="">
+                    <h3>Kevin</h3>
+                    <div class="wrap-rating">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p>"The shoes are super comfortable! Wearing them all day doesn't make your feet tired."</p>
+                </div>
+                <div class="user2">
+                    <img src="img/fi-br-user.svg" alt="">
+                    <h3>Rizky</h3>
+                    <div class="wrap-rating">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p>"The design is cool and really suitable for casual outfits. Recommended!"</p>
+                </div>
+                <div class="user3">
+                    <img src="img/fi-br-user.svg" alt="">
+                    <h3>Revaldi</h3>
+                    <div class="wrap-rating">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p>"The model is okay, just a bit tight at first but after a while it becomes comfortable to wear."</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+    <!-- Footer -->
+     <footer id="footer">
+        <div class="footer-wrap">
+        <div class="contact-us">
+            <h1>CONTACT US</h1>
+            <p>+62 819 3633 9561</p>
+            <p>revelstore@gmail.com</p>
+            <p>Find a Store</p>
+        </div>
+        <div class="customer-rervice">
+            <h1>CUSTOMER RERVICE</h1>
+            <p>Ordering & Payment</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>FAQ</p>
+        </div>
+        <div class="information">
+            <h1>INFORMATION</h1>
+            <p>Work With Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Press Enquiries</p>
+        </div>
+        <div class="subscribe">
+            <div class="title-subscribe">
+            <h4>Donation to Developer via Email</h4>
+            <p>Donate for support via email </p>
+        </div>
+        <div class="input-subscribe">
+            <input type="email" placeholder="Email Address" id="userEmail" autocomplete="off">
+            <button id="btn-subscribe">Donation</button>
+        </div>
+        </div>
+        <div class="logo-footer">
+        <img src="img/logo-footer.png" alt="">
+        <h2>Revel.</h2>
+        </div>
+        </div>
+     </footer>
+     <!-- Notif -->
+    <div id="toast" class="toast hidden">
+  <span>✅ Pembelian berhasil! Pesanan Segera Di Kirim!</span>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+    @font-face {
+    font-family: 'Montserrat';
+    src: url(static/Montserrat-MediumItalic.ttf);
+}
+    
+    body {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .exit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      top: 10px;
+      width: 170px;
+      height: 50px;
+    }
+
+    .exit-btn img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+
+    .profile-header .profile-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00000061;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .profile-info p {
+      margin: 4px 0;
+      color: #777;
+    }
+
+    .profile-details {
+      margin-top: 30px;
+    }
+
+    .email{
+      display: flex;
+      align-items: center;
+      width: 200px;
+    }
+
+    .address{
+      display: flex;
+      align-items: center;
+      width: 200px;
+    }
+
+    .icon{
+      width: 15px;
+      height: 15px;
+      opacity: 0.7;
+      margin: 0px 10px 0px 0px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .detail-row:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-weight: 500;
+    }
+
+    .value {
+      color: #555;
+      position: relative;
+      height: 0px;
+      bottom: 15px;
+    }
+
+    .profile-actions {
+      margin-top: 30px;
+      text-align: right;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }

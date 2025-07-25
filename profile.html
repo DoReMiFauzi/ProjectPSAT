@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revel</title>
+  <link rel="shortcut icon" href="img/trainers.png" type="">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="exit-btn">
+    <img src="img/fi-br-angle-small-left.svg" alt="" id="exitBtn">
+    <h3>Main Menu</h3>
+  </div>
+  <div class="container">
+    <div class="profile-header">
+      <img src="img/profile.png" alt="Foto Profil" class="profile-photo"/>
+      <div class="profile-info">
+        <h2 id="nickName"></h2>
+        <div class="email"><img src="img/fi-br-envelope.svg" alt="" class="icon" > <p id="email">user@gmail.com</p></div>
+        <div class="address"><img src="img/fi-br-marker.svg" alt="" class="icon"> <p id="address"> Bandung, Indonesia</p></div>
+      </div>
+    </div>
+
+    <div class="profile-details">
+      <div class="detail-row">
+        <div class="label">Full Name</div>
+        <div class="value"><p id="fullName">-</p></div>
+      </div>
+      <div class="detail-row">
+        <div class="label">Birth</div>
+        <div class="value"><p id="dob">-</p></div>
+      </div>
+      <div class="detail-row">
+        <div class="label">Telp</div>
+        <div class="value"><p id="telp">-</p></div>
+      </div>
+      <div class="detail-row">
+        <div class="label">Gender</div>
+        <div class="value"><p id="gender">-</p></div>
+      </div>
+      <div class="detail-row">
+        <div class="label">Status Account</div>
+        <div class="value"><p id="status">Active</p></div>
+      </div>
+    </div>
+
+    <div class="profile-actions">
+      <button class="btn" id="btnEdit"><i class="fa-solid fa-pen"></i> Edit Profile</button>
+    </div>
+  </div>
+
+<script src="profile.js"></script>
+</body>
+</html>

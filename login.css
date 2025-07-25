@@ -1,0 +1,156 @@
+   @font-face {
+    font-family: 'Montserrat';
+    src: url(static/Montserrat-MediumItalic.ttf);
+}
+   
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-side {
+      flex: 1;
+      background-color: #2563eb;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      flex-direction: column;
+    }
+
+    .left-side img{
+      width: 140px;
+      height: 140px;
+      bottom: 370px;
+      transform: rotateY('40');
+      position: absolute;
+    }
+
+    .left-side h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .left-side p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    .right-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+    }
+
+    .form-wrapper {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    form {
+      display: none;
+      flex-direction: column;
+    }
+
+    form.active {
+      display: flex;
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      transition: 600ms ease;
+    }
+
+    .form-group input:focus{
+      filter: drop-shadow(2px 2px 3px rgb(105, 105, 248));
+    }
+
+    .form-options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .form-options a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .form-options a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 600ms ease;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+
+    .toggle-link {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .toggle-link a {
+      color: #2563eb;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .toggle-link a:hover {
+      text-decoration: underline;
+    }
+
+    .message {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: red;
+    }

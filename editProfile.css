@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(static/Montserrat-MediumItalic.ttf);
+}
+
+body {
+      font-family: "Montserrat", sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 40px;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    .container {
+      max-width: 800px;
+      background-color: #fff;
+      padding: 30px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .logo{
+      width: 23px;
+      height: 23px;
+      opacity: 0.8;
+    }
+
+    form label {
+      display: block;
+      margin: 15px 0 6px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      outline: none;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-actions {
+      text-align: right;
+    }
+
+    .btnSave {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 0px 0px 0px 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btnBack {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .photo-preview {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .photo-preview img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(0, 0, 0, 0.381);
+    }

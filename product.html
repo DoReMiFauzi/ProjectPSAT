@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revel</title>
+  <link rel="shortcut icon" href="img/trainers.png" type="">
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="exit-btn">
+    <img src="img/fi-br-angle-small-left.svg" alt="" id="exitBtn">
+    <h3>Main Menu</h3>
+  </div>
+
+  <div class="product-container">
+    <div class="image-gallery">
+      <img id="mainImage" src="img/hitam-removebg-preview.png" class="main-image" alt="Sepatu">
+      <div class="thumbnails">
+        <img src="img/hitam-removebg-preview.png" class="thumbnail active" onclick="changeImage(this)">
+        <img src="img/kuning-removebg-preview.png" class="thumbnail" onclick="changeImage(this)">
+        <img src="img/merah-removebg-preview.png" class="thumbnail" onclick="changeImage(this)">
+        <img src="img/full-kuning-removebg-preview.png" class="thumbnail" onclick="changeImage(this)">
+        <img src="img/hitam-kuning-removebg-preview.png" class="thumbnail" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <!-- Info Produk -->
+    <div class="product-info">
+      <div class="title">Premium Sport shoes</div>
+      <div class="description">Light and stylish shoes, suitable for sports or daily casual style. Breathable material and soft soles support all-day comfort.</div>
+      <div class="price">Rp <span id="priceValue">299.000</span></div>
+
+      <div class="options">
+        <span class="label">Size</span>
+        <div class="size-options">
+          <button onclick="selectOption(this, 'size')">38</button>
+          <button onclick="selectOption(this, 'size')">39</button>
+          <button onclick="selectOption(this, 'size')">40</button>
+          <button onclick="selectOption(this, 'size')">41</button>
+          <button onclick="selectOption(this, 'size')">42</button>
+        </div>
+      </div>
+
+      <div class="options">
+        <span class="label">Color</span>
+        <div class="color-options">
+          <button onclick="selectOption(this, 'color')">Black</button>
+          <button onclick="selectOption(this, 'color')">Yellow</button>
+          <button onclick="selectOption(this, 'color')">Red</button>
+          <button onclick="selectOption(this, 'color')">Yellow And Black</button>
+        </div>
+      </div>
+
+      <div class="quantity">
+        <span class="label">Jumlah</span>
+        <input type="number" id="quantityInput" value="1" min="1" onchange="updateTotal()">
+      </div>
+
+      <button class="buy-button" id="btn-buy"><img src="img/shopping-cart.png" alt="">Buy Now  </button>
+    </div>
+  </div>
+
+  <script src="product.js"></script>
+
+</body>
+</html>

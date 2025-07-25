@@ -1,0 +1,158 @@
+    @font-face {
+    font-family: 'Montserrat';
+    src: url(static/Montserrat-MediumItalic.ttf);
+}
+    
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .exit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      bottom: 25px;
+      right: 30px;
+      width: 170px;
+      height: 50px;
+    }
+
+    .exit-btn img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .product-container {
+      max-width: 1100px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+    }
+
+    .image-gallery {
+      flex: 1;
+      min-width: 320px;
+      position: relative;
+      left: 60px;
+    }
+
+    .main-image {
+      width: 70%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      filter: drop-shadow(1px 9px 5px grey);
+    }
+
+    .thumbnails {
+      display: flex;
+      gap: 10px;
+    }
+
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .thumbnail.active {
+      border-color: #007bff;
+    }
+
+    .product-info {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    .options {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .size-options button,
+    .color-options button {
+      margin: 5px;
+      padding: 8px 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .size-options button.active,
+    .color-options button.active {
+      border-color: #007bff;
+      background: #e7f0ff;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .quantity input {
+      width: 50px;
+      padding: 6px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .buy-button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: #0056b3;
+    }
+
+    .buy-button img{
+      width: 13px;
+      height: 13px;
+      margin: 0px 10px 0px 0px;
+    }
